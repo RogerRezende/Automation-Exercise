@@ -9,7 +9,7 @@ it('Acessar a tela de products', () => {
     cy.url().should('be.equal', 'https://automationexercise.com/products')
 })
 
-it.only('Acessar a tela de cart', () => {
+it('Acessar a tela de cart', () => {
     cy.visit('/')
     cy.get('.shop-menu > .nav > :nth-child(3) > a').click()
     cy.url().should('be.equal', 'https://automationexercise.com/view_cart')
